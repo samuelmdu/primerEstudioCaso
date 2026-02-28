@@ -17,7 +17,7 @@ public class Menu {
             System.out.println("1. Llamar rutina");
             System.out.println("2. Finalizar rutina");
             System.out.println("3. Ver rutina actual");
-            System.out.println("4. Mostrar pila completa");
+            System.out.println("4. Mostrar call stack");
             System.out.println("5. Salir");
             System.out.print("Ingrese una opción: ");
 
