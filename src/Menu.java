@@ -16,8 +16,8 @@ public class Menu {
             System.out.println("--- MENU ---");
             System.out.println("1. Llamar rutina");
             System.out.println("2. Finalizar rutina");
-            System.out.println("3. Ver rutina actual");
-            System.out.println("4. Mostrar call stack");
+            System.out.println("3. Ver rutina en ejecución");
+            System.out.println("4. Simular call stack");
             System.out.println("5. Salir");
             System.out.print("Ingrese una opción: ");
 
@@ -41,14 +41,14 @@ public class Menu {
                     if (finalizada == null) {
                         System.out.println("No hay rutinas activas\n");
                     } else {
-                        System.out.println("Finalizando: " + finalizada + "\n");
+                        System.out.println("Finalizando ejecución: " + finalizada + "\n");
                     }
                     break;
 
                 case 3:
                     Rutina actual = callStack.peek();
                     if (actual == null) {
-                        System.out.println("No hay rutina activa\n");
+                        System.out.println("No hay rutina ejecutandose\n");
                     } else {
                         System.out.println("Rutina actual: " + actual + "\n");
                     }

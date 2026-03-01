@@ -32,9 +32,8 @@ public class PilaRutinas {
 
     public void mostrarPila() {
         System.out.println("\n--- CALL STACK ---");
-        for (int i = pila.size() - 1; i >= 0; i--) {
-            System.out.println("| " + pila.get(i) + " |");
-
+        if (isEmpty() == false){
+            System.out.println("| " + peek() + " |");
         }
         System.out.println("| Main() |");
         System.out.println("------------------\n");
